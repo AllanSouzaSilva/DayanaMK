@@ -1,0 +1,537 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #141414;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/****************************** Configuração container principal *************************/
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
+/****************************** Nav cabeçalho *************************/
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-right: 150px;
+  filter: drop-shadow(0 0 8px #ac66cc);
+  z-index: 1;
+}
+
+.logo:hover {
+  color: #fff;
+  filter: drop-shadow(0 0 8px #ac66cc);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-top: 10px;
+  letter-spacing: 3px;
+  margin-left: 25px;
+  z-index: 1;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.nav-list {
+  margin-bottom: -100px;
+  margin-top: 2px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  border: 1px solid #ac66cc;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.nav-link:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient( center, ellipse, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 50%);
+  background: radial-gradient( ellipse at center, rgb(255, 255, 255) 0%, rgba(246, 246, 246, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+
+.nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+/************************************** Responsividade nave ********************************/
+
+/****************************** Configuração carousel *************************/
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  bottom: 150px;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-caption h2 {
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-caption a {
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.main-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 20px 6px 20px;
+  border-radius: 30px;
+  filter: drop-shadow(0 0 8px #ac66cc);
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  background: linear-gradient(25deg, #3022ea, #8e3ecd, #be5eb0, #e37e91);
+  text-decoration: none;
+  color: #fff;
+  border-color: #ac66cc;
+  border: 2px solid #ac66cc;
+}
+
+.carousel-indicators .active {
+  background-color: #ac66cc;
+}
+
+/****************************** Configuração secao pessoal/profissional *************************/
+
+.secao-profissional {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 100%), url(/img-body/photo5.jpg), center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: drop-shadow(0 0 8px #252525);
+}
+
+.secao-pessoal {
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+.secao-efeito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.paragrafo-profissional {
+  margin: 70px 70px 0px 0px;
+  width: 50%;
+}
+
+.paragrafo-secao {
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.botao-whats {
+  text-align: center;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, rgb(11, 170, 32), #4ae491, #49aa75);
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 200px 0px 200px;
+}
+
+.link-botao {
+  color: #fff;
+}
+
+.link-botao:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.botao-whats:hover:nth-child(2) {
+  color: #d6f5e1;
+  box-shadow: 0 0 30px #25d366;
+}
+
+.secao-img {
+  backdrop-filter: blur (2px);
+  filter: drop-shadow(0 0 15px #ac66cc);
+  object-fit: scale-down;
+  line-height: 42px;
+  transform: perspective(800px) rotateY(15deg) scale(0.9) rotateX(10deg);
+  opacity: (0.5);
+  transition: 0.6s ease all;
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+.secao-img:hover {
+  transform: perspective(400px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
+  filter: blur(0);
+  opacity: 5;
+  border-radius: 10px;
+}
+
+.img-profile {
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(224, 15, 207, 0.794));
+}
+
+.animated-up-down {
+  animation: up-down 0.5s ease-in-out infinite alternate-reverse backwards;
+}
+
+@-webkit-keyframes up-down {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/****************************** Configuração secao hobbies *************************/
+
+.secao-hobbies {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%), url(/img-body/photo6.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.secao-hobbies-descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur (2px);
+  object-fit: scale-down;
+  border-radius: 10px;
+  height: 90vh;
+  padding: 100px;
+  width: 100%;
+}
+
+.alt {
+  font-family: "Crete Round", serif;
+  text-align: center;
+  color: #fff;
+  filter: drop-shadow(0 0 7px #ac66cc);
+  margin: 0px;
+  padding: 0px;
+}
+
+.campo-hobbie {
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+}
+
+.container-hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hobbie1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  border: 2px solid #ac66cc;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 10px 20px 0px 30px;
+}
+
+.hobbie1:hover:nth-child(1) {
+  color: #d6f5e1;
+  box-shadow: 0 0 30px #fff;
+}
+
+.hobbie1:hover:nth-child(2) {
+  color: #d6f5e1;
+  box-shadow: 0 0 30px #fff;
+}
+
+.secao-icon {
+  font-size: 2em;
+}
+
+/*
+.paragrafo-hobbie {
+  margin-right: 0px 10px 0px 80px;
+  text-align: justify;
+  letter-spacing: 1px;
+  width: 50%;
+}*/
+
+/****************************** Configuração secao resultados *************************/
+
+.secao-conquistas {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url(/img-body/photo3.jpg), center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #d8e3e7;
+  text-align: center;
+}
+
+.owl-dots {
+  margin: 10px;
+}
+
+.secao-titulo {
+  font-family: "Crete Round", serif;
+  text-align: center;
+  color: #fff;
+  padding: 80px;
+  filter: drop-shadow(0 0 7px #ac66cc);
+}
+
+.sub-title {
+  font-style: italic;
+  font-weight: bolder;
+  margin-top: -30px;
+}
+
+/****************************** Configuração secao alunos *************************/
+
+.secao-aluno {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(/img-body/ryunosuke-kikuno-VKjCfN5zYp8-unsplash.jpg), center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #d8e3e7;
+  overflow: hidden;
+}
+
+/****************************** Configuração secao box alunos  *************************/
+
+.box-aluno {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.olw-carousel {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/****************************** Configuração secao contato*************************/
+
+.secao-contato {
+  position: absolute;
+  text-align: center;
+  margin: 100px 0px 0px 284px;
+}
+
+.secao-contato {
+  color: #fff;
+}
+
+.efect>i {
+  font-size: 1.3em;
+  margin: 10px;
+  color: #ac66cc;
+}
+
+.efect {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.secao-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.container-redes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 100px 0px 100px;
+  color: #fff;
+  font-size: 1em;
+}
+
+.link-contato {
+  padding: 0px;
+  color: #fff;
+}
+
+#contatos {
+  color: #ac66cc;
+}
+
+.efect>p {
+  color: #fff;
+}
+
+/****************************** Configuração secao rodapé *************************/
+
+.fab-rodape {
+  padding: 10px;
+}
+
+.icon-rodape {
+  padding: 30px 50px 0px 50px;
+}
+
+.fa-facebook-square {
+  color: #282de4;
+  border-radius: 10px;
+  background-image: linear-gradient(25deg, #282de4, #6371ea, #7db0ee, #88f0f0);
+  box-shadow: 0px 3px 10px rgba(194, 193, 193, 0.25);
+}
+
+.fa-facebook-square:hover {
+  color: #d6f5e1;
+  box-shadow: 0 0 30px #333af6;
+}
+
+.fa-linkedin {
+  color: #333af6;
+  border-radius: 10px;
+  background-image: linear-gradient(25deg, #453de6, #5c7ad7, #56b1c6, #05e8b2);
+  box-shadow: 0px 3px 10px rgba(194, 193, 193, 0.25);
+}
+
+.fa-instagram {
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 250px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  box-shadow: 0px 3px 10px rgba(194, 193, 193, 0.25);
+}
+
+.fa-instagram:hover:nth-child(1) {
+  color: #d6f5e1;
+  box-shadow: 0 0 30px #d6249f;
+}
+
+.fa-linkedin:hover:nth-child(1) {
+  color: #d6f5e1;
+  box-shadow: 0 0 30px #333af6;
+}
+
+/*****************************.* Particulas *************************/
+
+#particles-js {
+  background: #141414;
+  height: 90%;
+  padding: 0px;
+  margin: 0px;
+}
