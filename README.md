@@ -28,8 +28,6 @@
   <a href="#-executando-o-projeto">Executando o projeto</a> •
   <a href="#-licença">Licença</a>
 </p>
-
----
 <!-- imagens-->
 <h2 align="center">
   <p>Web Marketing home page</p>
@@ -41,8 +39,6 @@
   <img width="30%" heigth="30%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/DayanaMobile.gif" style="max-width:40%;">
 </h2>
 
-
----
 
 ## 📄 Sobre 
 
@@ -73,8 +69,6 @@ E me propôs a cração desse projeto com o seguinte escopo, um site que tenha u
 ✅ - Implementar efeitos do javascript, scrollveal.
 
 ✅ - Se posível criar um botão principal que chame a atenção com o objetivo de chegar até o whatsaap particular ou coorporativo.
-
-
 
 ---
 
@@ -111,11 +105,11 @@ dayanamarketingdigital
 clique duas vezes no arquivo index.html
 
 ```
-# Caso a página não abrir automáticamente acesse:
+### Caso a página não abrir automáticamente acesse:
+ 127.0.0.1:5501/index.html
+### Caso não tenha a extenção no vscode:
 
-# Caso não tenha a extenção no vscode:
-
---- Vá até o navegador e digite: 127.0.0.1:5501/index.html
+ Navegue até o navegador e digite: 127.0.0.1:5501/index.html
 ### 🚀 Milha Extra
 
 Além do que foi pedido foi feito um deploy grátuito sem fins comerciais no netlify, para outros terem acesso ao projeto 
@@ -124,6 +118,12 @@ Além do que foi pedido foi feito um deploy grátuito sem fins comerciais no net
  [![NPM](https://img.shields.io/npm/l/react)](https://github.com/AllanSouzaSilva/allan-website/blob/main/LICENSE)
 
 ## 🚀 Entre em contato!
+
+[![social](https://img.shields.io/badge/Linkedin--blue?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/allan-souza-silva-794164146/)
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+[![social](https://img.shields.io/badge/Site--red?style=for-the-badge)](https://allansouza-freelancer.netlify.app/)
+
 ---
-Desenvolvido por [Allan Souza](https://www.linkedin.com/in/allan-souza-silva-794164146/).
+Criado por [Allan Souza](https://www.linkedin.com/in/allan-souza-silva-794164146/).
+
 
