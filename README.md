@@ -31,11 +31,17 @@
 
 ---
 <!-- imagens-->
-<h4 align="center">
+<h2 align="center">
   <p>Web Marketing home page</p>
   <img width="70%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/allansouza-freelancer/blob/main/video/Sobre.gif" style="max-width:70%;">
+</h2>
 
-</h4>
+<h2 align="center">
+  <p>Web Marketing home page - Mobile</p>
+  <img width="30%" heigth="30%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/DayanaMobile.gif" style="max-width:40%;">
+</h2>
+
+
 ---
 
 ## 📄 Sobre 
