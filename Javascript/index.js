@@ -1,60 +1,97 @@
-//Animação reval
+/*Animação reval*/
 window.sr = ScrollReveal();
 
-sr.reveal(".fixed-top", {
-  duration: 4000,
-  origin: "bottom",
-  distance: "-100px",
+sr.reveal(".marketing-img", {
+  duration: 3000,
+  origin: "top",
+  distance: "100px",
 });
 sr.reveal(".carousel", {
   duration: 3000,
   origin: "top",
-  distance: "-100px",
+  distance: "100px",
 });
-sr.reveal(".secao-efeito", {
+sr.reveal(".img-dayana", {
   duration: 3000,
   origin: "top",
-  distance: "200px",
+  distance: "100px",
 });
-sr.reveal(".secao-img", {
+sr.reveal(".box", {
   duration: 3000,
   origin: "top",
-  distance: "300px",
+  distance: "100px",
 });
-sr.reveal(".secao-titulo", {
+sr.reveal(".itens-cursos", {
+  duration: 1000,
+  origin: "top",
+  distance: "100px",
+});
+sr.reveal(".effect", {
+  duration: 2000,
+  origin: "top",
+  distance: "100px",
+});
+sr.reveal(".effect1", {
   duration: 3000,
   origin: "top",
-  distance: "300px",
+  distance: "100px",
 });
-sr.reveal(".secao-hobbies", {
-  duration: 3000,
-  origin: "bottom",
-  distance: "300px",
+sr.reveal(".effect2", {
+  duration: 4000,
+  origin: "top",
+  distance: "100px",
 });
-sr.reveal(".campo-hobbie", {
+sr.reveal(".effect3", {
+  duration: 5000,
+  origin: "top",
+  distance: "100px",
+});
+sr.reveal(".effect4", {
+  duration: 6000,
+  origin: "top",
+  distance: "100px",
+});
+sr.reveal(".effect5", {
+  duration: 7000,
+  origin: "top",
+  distance: "100px",
+});
+sr.reveal(".effect6", {
+  duration: 8000,
+  origin: "top",
+  distance: "100px",
+});
+
+sr.reveal(".itens", {
   duration: 3000,
   origin: "top",
-  distance: "200px",
+  distance: "100px",
 });
-sr.reveal(".carrosel-aluno", {
+sr.reveal(".btn-increvase-desfrute", {
+  duration: 3000,
+  origin: "top",
+  distance: "100px",
+});
+sr.reveal(".container-desfrute-marketing-video", {
   duration: 3000,
   origin: "left",
-  distance: "300px",
+  distance: "100px",
 });
-sr.reveal(".container-dicas", {
+sr.reveal(".accordion", {
   duration: 3000,
   origin: "top",
-  distance: "300px",
+  distance: "100px",
 });
-sr.reveal(".secao-contato", {
+sr.reveal(".lista-contato", {
   duration: 3000,
   origin: "top",
-  distance: "300px",
+  distance: "100px",
 });
-sr.reveal(".container-redes", {
+
+sr.reveal(".img-desfrute", {
   duration: 3000,
   origin: "top",
-  distance: "300px",
+  distance: "100px",
 });
 
 

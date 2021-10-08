@@ -1,984 +1,545 @@
-/*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
-
-@media (min-width: 320px) and (max-width: 573px) {
-  body {
+@media(max-width: 573px) {
+  html {
     overflow-x: hidden;
   }
-  .secao-titulo{
-    font-size: 1.5rem;
-  }
-  .sub-title{
-    font-size: 1rem;
-  }
-    
-  
-  .logo {
-    filter: drop-shadow(0 0 8px #ac66cc);
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .nav-link {
-    padding: 5px;
-  }
-  .nav-list {
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 4px;
-    right: 20;
-    width: 50vw;
-    height: 100vh;
-    margin-top: 0px;
-    top: 38px;
-    background: rgba(8, 8, 8, 0.644);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+  .container-fluid {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    z-index: 1;
   }
-  .nav-list li {
-    margin: 10px 0px 18px 0px;
-    opacity: 0;
+  .sticky {
+    background: rgba(255, 255, 255, 0.924);
+    backdrop-filter: blur( 2.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
   }
-  .mobile-menu {
-    display: block;
+  .logo {
+    margin-left: 25px;
+    font-size: 1.7rem;
   }
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  nav {
-    background: rgba(8, 8, 8, 0.5);
-  }
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .carousel-item {
+  /* Container marketing */
+  .container-marketing {
+    background-color: #a830b0;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin: 0;
+  }
+  .marketing-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-right: 0px 0px;
+  }
+  /* Container carousel */
+  .carousel {
+    width: 100%;
+    height: 300px;
+    margin: auto !important;
   }
   .carousel-caption {
-    top: -1rem;
+    width: 350px;
+    height: 290px;
+    left: 38px;
+    bottom: 180px;
   }
   .carousel-caption h2 {
-    font-size: 11px;
-  }
-  .carousel-inner {
-    height: 35vh;
-  }
-  .carousel-indicators {
-    display: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   .carousel-caption p {
-    font-size: 11px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 1;
   }
-  .main-btn {
-    padding: 1px 9px 1px 9px;
+  .carousel-item {
+    margin-left: 0;
   }
-  /* Seção proficional */
-  .secao-profissional {
-    overflow-x: hidden;
+  .carousel-control-prev, .carousel-control-next {
+    top: 150px;
+    width: 50px;
+    height: 50px;
   }
-  .secao-pessoal {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .paragrafo-profissional {
-    width: 100%;
-    margin: 0px;
-    padding: 12px;
-  }
-  .secao-efeito {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-  }
-  .secao-img {
-    margin: 30px 0px 0px 0px;
-    padding: 10px;
-    width: 90%;
-    height: 40%;
-  }
-  .img-profile {
-    width: 70%;
-    height: 69%;
-  }
-  .botao-whats {
-    width: 50%;
-    margin-top: 30px;
-    padding: 0px 80px 0px 80px;
-  }
-  /* Hobbies */
-  .secao-hobbies {
-    background-image: url(/img-body/phot4200.jpg);
-    background-size: cover;
-  }
-  .container-hobbies {
-    width: 100%;
-  }
-  .hobbie1 {
-    margin: 5px;
-    width: 8rem;
-  }
-  .fa-running {
-    margin-bottom: -3px;
-  }
-  .secao-hobbies-descricao{
-    height: 70vh;
-    padding: 10px;
-  }
-  /* Dicas */
-  .container-dicas {
+  /* container-apresentacao */
+  .container-img-descricao {
     display: flex;
     flex-direction: column;
   }
-  .container-dicas {
-    width: 70%;
+  .img-dayana {
+    bottom: -890px;
+    border-radius: 200px;
   }
-  .img-dicas {
+  .box .content {
     
-    margin: 5px;
-  
-  }
-
-  /* Rodapé */
-  .container-rodape {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 150vh;
-  }
-  .secao-contato {
-    margin: 10px 0px 0px 10px;
-  }
-  #particles-js {
-    height: 65%;
-  }
-  .container-redes {
-    margin-top: 5rem;
-    margin-bottom: -5rem;
-    padding: 0px;
-  }
-  .icon-rodape {
-    padding: 0px 20px 0px 5px;
-    margin-top: 20px;
     font-size: 1rem;
+    top: 0px;
+  }
+  .box {
+    width: 100%;
+    height: 398px;
+    top: 15px;
+  }
+  /* Container produtos */
+  .container-servicos {
+    margin: 0;
+    width: 100%;
+    top: 500px;
+  }
+  .container-itens {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .itens-cursos {
+    width: 100%;
+  }
+  /* Container resultados */
+  .container {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 150px;
+  }
+  /* Container resultados Alunos */
+  .itens {
+    width: 100%;
+    margin: 0;
+  }
+  /* Container desfrute */
+  .container-desfrute-marketing {
+    flex-direction: column;
+    height: 80vh;
+    transform: none;
+  }
+  .img-desfrute {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-increvase-desfrute {
+    height: 5%;
+    width: 90%;
+  }
+  .svg-descricao {
+    display: none;
+  }
+  .container-desfrute-marketing:hover {
+    transform: scale(1);
+  }
+  .container-desfrute-marketing::before {
+    transform: translateZ(4rem);
+  }
+  .container-desfrute-marketing::before:hover {
+    transform: translateZ(0);
+  }
+  .container-desfrute-marketing::after {
+    transform: translateZ(-4rem);
+  }
+  .container-desfrute-marketing::after:hover {
+    transform: translateZ(-1px);
+  }
+  /* Depoimentos dos alunos */
+  .itens-depoimentos {
+    width: 90%;
+  }
+  /* Container inscrever */
+  .btn-increvase {
+    width: 100%;
+  }
+  /* Dúvidas frequentes */
+  .duvidas-responsivo {
+    width: 100%;
+  }
+  /* Container plataformas */
+  .mobile-plat {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 0px;
+  }
+  .cont-platafoma-itens {
+    align-items: center;
+    justify-content: center;
+  }
+  .img-mobile {
+    width: 80%;
+    height: 60%;
+  }
+  /* Acorddeon*/
+  .h-6 {
+    margin: 15px;
+    font-size: 1rem;
+  }
+  /* Contatos/Rodapé */
+  .container-principal-contato {
+    flex-direction: column;
   }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  body {
+@media (min-width: 574px) and (max-width: 767.98px) {
+  html {
     overflow-x: hidden;
   }
-  .secao-titulo{
-    font-size: 1.5rem;
-  }
-  .sub-title{
-    font-size: 1rem;
-  }
-    
-  
-  .logo {
-    filter: drop-shadow(0 0 8px #ac66cc);
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .nav-link {
-    padding: 5px;
-  }
-  .nav-list {
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 4px;
-    right: 20;
-    width: 50vw;
-    height: 100vh;
-    margin-top: 0px;
-    top: 38px;
-    background: rgba(8, 8, 8, 0.644);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+  .container-fluid {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    z-index: 1;
   }
-  .nav-list li {
-    margin: 10px 0px 18px 0px;
-    opacity: 0;
+  .sticky {
+    background: rgba(255, 255, 255, 0.924);
+    backdrop-filter: blur( 2.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
   }
-  .mobile-menu {
-    display: block;
+  .logo {
+    margin-left: 25px;
+    font-size: 1.7rem;
   }
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  nav {
-    background: rgba(8, 8, 8, 0.5);
-  }
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .carousel-item {
+  /* Container marketing */
+  .container-marketing {
+    background-color: #a830b0;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin: 0;
+  }
+  .marketing-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-right: 0px 0px;
+  }
+  /* Container carousel */
+  .carousel {
+    width: 100%;
+    height: 300px;
+    margin: auto !important;
   }
   .carousel-caption {
-    top: -1rem;
+    width: 350px;
+    height: 290px;
+    left: 120px;
+    bottom: 180px;
   }
   .carousel-caption h2 {
-    font-size: 11px;
-  }
-  .carousel-inner {
-    height: 35vh;
-  }
-  .carousel-indicators {
-    display: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   .carousel-caption p {
-    font-size: 11px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 1;
   }
-  .main-btn {
-    padding: 1px 9px 1px 9px;
+  .carousel-item {
+    margin-left: 0;
   }
-  /* Seção proficional */
-  .secao-profissional {
-    overflow-x: hidden;
+  .carousel-control-prev, .carousel-control-next {
+    top: 150px;
+    width: 50px;
+    height: 50px;
   }
-  .secao-pessoal {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .paragrafo-profissional {
-    width: 100%;
-    margin: 0px;
-    padding: 12px;
-  }
-  .secao-efeito {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-  }
-  .secao-img {
-    margin: 30px 0px 0px 0px;
-    padding: 10px;
-    width: 90%;
-    height: 40%;
-  }
-  .img-profile {
-    width: 70%;
-    height: 69%;
-  }
-  .botao-whats {
-    width: 50%;
-    margin-top: 30px;
-    padding: 0px 80px 0px 80px;
-  }
-  /* Hobbies */
-  .secao-hobbies {
-    background-image: url(/img-body/phot4200.jpg);
-    background-size: cover;
-  }
-  .container-hobbies {
-    width: 100%;
-  }
-  .hobbie1 {
-    margin: 5px;
-    width: 8rem;
-  }
-  .fa-running {
-    margin-bottom: -3px;
-  }
-  .secao-hobbies-descricao{
-    height: 70vh;
-    padding: 10px;
-  }
-  /* Dicas */
-  .container-dicas {
+  /* container-apresentacao */
+  .container-img-descricao {
     display: flex;
     flex-direction: column;
   }
-  .container-dicas {
-    width: 70%;
-  }
-  .img-dicas {
-    
-    margin: 5px;
   
+  .img-dayana {
+    bottom: -1018px;
+    border-radius: 200px;
+  }
+  .box .content {
+    
+    font-size: 1rem;
+    top: 0px;
+  }
+  .box {
+    width: 100%;
+    height: 410px;
+    top: 25px;
+  }
+   /* Container produtos */
+  .container-servicos {
+    margin: 0;
+    width: 100%;
+    top: 500px;
+  }
+  .container-itens {
+    flex-direction: column;
+    justify-content: space-around;
   }
 
-  /* Rodapé */
-  .container-rodape {
-    display: flex;
-    align-items: flex-start;
+  .itens-cursos {
+    width: 100%;
+  }
+  /* Container resultados */
+  .container {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 150px;
+  }
+  /* Container resultados Alunos */
+  .itens {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Container desfrute */
+  
+  .container-desfrute-marketing {
     flex-direction: column;
-    height: 150vh;
+    height: 100%;
+    transform: none;
   }
-  .secao-contato {
-    margin: 10px 0px 0px 10px;
-  }
-  #particles-js {
-    height: 65%;
-  }
-  .container-redes {
-    margin-top: 0rem;
-    padding-top: 4rem;
-    padding: 0px;
-  }
-  .icon-rodape {
-    padding: 0px 20px 0px 5px;
-    margin-top: 20px;
-    font-size: 1rem;
-  }
+  
+.img-desfrute {
+  width: 100%;
+  height: 100%;
 }
-
-/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  body {
-    overflow-x: hidden;
-  }
-  .secao-titulo{
-    font-size: 1.5rem;
-  }
-  .sub-title{
-    font-size: 1rem;
-  }
-    
-  
-  .logo {
-    filter: drop-shadow(0 0 8px #ac66cc);
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .nav-link {
-    padding: 5px;
-  }
-  .nav-list {
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 4px;
-    right: 20;
-    width: 50vw;
-    height: 100vh;
-    margin-top: 0px;
-    top: 38px;
-    background: rgba(8, 8, 8, 0.644);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .nav-list li {
-    margin: 10px 0px 18px 0px;
-    opacity: 0;
-  }
-  .mobile-menu {
-    display: block;
-  }
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  nav {
-    background: rgba(8, 8, 8, 0.5);
-  }
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .carousel-item {
-    align-items: center;
-  }
-  .carousel-caption {
-    top: -1rem;
-  }
-  .carousel-caption h2 {
-    font-size: 11px;
-  }
-  .carousel-inner {
-    height: 35vh;
-  }
-  .carousel-indicators {
-    display: none;
-  }
-  .carousel-caption p {
-    font-size: 11px;
-  }
-  .main-btn {
-    padding: 1px 9px 1px 9px;
-  }
-  /* Seção proficional */
-  .secao-profissional {
-    overflow-x: hidden;
-  }
-  .secao-pessoal {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .paragrafo-profissional {
-    width: 100%;
-    margin: 0px;
-    padding: 12px;
-  }
-  .secao-efeito {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-  }
-  .secao-img {
-    margin: 30px 0px 0px 0px;
-    padding: 10px;
+  .btn-increvase-desfrute {
+    height: 5%;
     width: 90%;
-    height: 40%;
   }
-  .img-profile {
-    width: 70%;
-    height: 69%;
-  }
-  .botao-whats {
-    width: 50%;
-    margin-top: 30px;
-    padding: 0px 80px 0px 80px;
-  }
-  /* Hobbies */
-  .secao-hobbies {
-    background-image: url(/img-body/phot4200.jpg);
-    background-size: cover;
-  }
-  .container-hobbies {
-    width: 100%;
-  }
-  .hobbie1 {
-    margin: 5px;
-    width: 8rem;
-  }
-  .fa-running {
-    margin-bottom: -3px;
-  }
-  .secao-hobbies-descricao{
-    height: 70vh;
-    padding: 10px;
-  }
-  /* Dicas */
-  .container-dicas {
-    display: flex;
-    flex-direction: column;
-  }
-  .container-dicas {
-    width: 70%;
-  }
-  .img-dicas {
-    
-    margin: 5px;
   
-  }
-
-  /* Rodapé */
-  .container-rodape {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 150vh;
-  }
-  .secao-contato {
-    margin: 10px 0px 0px 10px;
-  }
-  #particles-js {
-    height: 65%;
-  }
-  .container-redes {
-    margin-top: 0rem;
-    padding-top: 4rem;
-    padding: 0px;
-  }
-  .icon-rodape {
-    padding: 0px 20px 0px 5px;
-    margin-top: 20px;
-    font-size: 1rem;
-  }
+.svg-descricao {
+  display: none;
 }
-
-/* Dispositivos médios (tablets com 768px ou mais)*/
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  body {
-    overflow-x: hidden;
+  .container-desfrute-marketing:hover {
+    transform: scale(1);
   }
-  .secao-titulo{
-    font-size: 1.5rem;
+  .container-desfrute-marketing::before {
+    transform: translateZ(4rem);
   }
-  .sub-title{
-    font-size: 1rem;
+  .container-desfrute-marketing::before:hover {
+    transform: translateZ(0);
   }
-    
+  .container-desfrute-marketing::after {
+    transform: translateZ(-4rem);
+  }
+  .container-desfrute-marketing::after:hover {
+    transform: translateZ(-1px);
+  }
+ 
+  /* Depoimentos dos alunos */
   
-  .logo {
-    filter: drop-shadow(0 0 8px #ac66cc);
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .nav-link {
-    padding: 5px;
-  }
-  .nav-list {
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 4px;
-    right: 20;
-    width: 50vw;
-    height: 100vh;
-    margin-top: 0px;
-    top: 38px;
-    background: rgba(8, 8, 8, 0.644);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .nav-list li {
-    margin: 10px 0px 18px 0px;
-    opacity: 0;
-  }
-  .mobile-menu {
-    display: block;
-  }
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  nav {
-    background: rgba(8, 8, 8, 0.5);
-  }
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .carousel-item {
-    align-items: center;
-  }
-  .carousel-caption {
-    top: -1rem;
-  }
-  .carousel-caption h2 {
-    font-size: 11px;
-  }
-  .carousel-inner {
-    height: 35vh;
-  }
-  .carousel-indicators {
-    display: none;
-  }
-  .carousel-caption p {
-    font-size: 11px;
-  }
-  .main-btn {
-    padding: 1px 9px 1px 9px;
-  }
-  /* Seção proficional */
-  .secao-profissional {
-    overflow-x: hidden;
-  }
-  .secao-pessoal {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .paragrafo-profissional {
-    width: 100%;
-    margin: 0px;
-    padding: 12px;
-  }
-  .secao-efeito {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-  }
-  .secao-img {
-    margin: 30px 0px 0px 0px;
-    padding: 10px;
+  .itens-depoimentos {
     width: 90%;
-    height: 40%;
   }
-  .img-profile {
-    width: 70%;
-    height: 69%;
-  }
-  .botao-whats {
-    width: 50%;
-    margin-top: 30px;
-    padding: 0px 80px 0px 80px;
-  }
-  /* Hobbies */
-  .secao-hobbies {
-    background-image: url(/img-body/phot4200.jpg);
-    background-size: cover;
-  }
-  .container-hobbies {
+  /* Container inscrever */
+
+  .btn-increvase {
     width: 100%;
   }
-  .hobbie1 {
-    margin: 5px;
-    width: 8rem;
+  /* Dúvidas frequentes */
+  .duvidas-responsivo {
+    width: 100%;
   }
-  .fa-running {
-    margin-bottom: -3px;
+  /* Container plataformas */
+  .mobile-plat {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 0px;
   }
-  .secao-hobbies-descricao{
-    height: 70vh;
-    padding: 10px;
+  .cont-platafoma-itens {
+    align-items: center;
+    justify-content: center;
   }
-  /* Dicas */
-  .container-dicas {
-    display: flex;
-    flex-direction: column;
+  .img-mobile {
+    width: 80%;
+    height: 60%;
   }
-  .container-dicas {
-    width: 70%;
-  }
-  .img-dicas {
-    
-    margin: 5px;
-  
-  }
-
-  /* Rodapé */
-  .container-rodape {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 150vh;
-  }
-  .secao-contato {
-    margin: 10px 0px 0px 10px;
-  }
-  #particles-js {
-    height: 65%;
-  }
-  .container-redes {
-    margin-top: 0rem;
-    padding-top: 4rem;
-    padding: 0px;
-  }
-  .icon-rodape {
-    padding: 0px 20px 0px 5px;
-    margin-top: 20px;
+  /* Acorddeon*/
+  .h-6 {
+    margin: 15px;
     font-size: 1rem;
+  }
+  /* Contatos/Rodapé */
+  .container-principal-contato {
+    flex-direction: column;
   }
 }
 
 /* Dispositivos large (desktops com 992px ou mais)*/
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  body {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
     overflow-x: hidden;
   }
-  .secao-titulo{
-    font-size: 1.5rem;
-  }
-  .sub-title{
-    font-size: 1rem;
-  }
-    
-  
-  .logo {
-    filter: drop-shadow(0 0 8px #ac66cc);
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .nav-link {
-    padding: 5px;
-  }
-  .nav-list {
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 4px;
-    right: 20;
-    width: 50vw;
-    height: 100vh;
-    margin-top: 0px;
-    top: 38px;
-    background: rgba(8, 8, 8, 0.644);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+  .container-fluid {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    z-index: 1;
   }
-  .nav-list li {
-    margin: 10px 0px 18px 0px;
-    opacity: 0;
+  .sticky {
+    background: rgba(255, 255, 255, 0.924);
+    backdrop-filter: blur( 2.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
   }
-  .mobile-menu {
-    display: block;
+  .logo {
+    margin-left: 25px;
+    font-size: 1.7rem;
   }
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  nav {
-    background: rgba(8, 8, 8, 0.5);
-  }
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .carousel-item {
+  /* Container marketing */
+  .container-marketing {
+    background-color: #a830b0;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin: 0;
+  }
+  .marketing-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-right: 0px 0px;
+  }
+  /* Container carousel */
+  .carousel {
+    width: 100%;
+    height: 300px;
+    margin: auto !important;
   }
   .carousel-caption {
-    top: -1rem;
+    width: 350px;
+    height: 290px;
+    left: 120px;
+    bottom: 180px;
   }
   .carousel-caption h2 {
-    font-size: 11px;
-  }
-  .carousel-inner {
-    height: 35vh;
-  }
-  .carousel-indicators {
-    display: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   .carousel-caption p {
-    font-size: 11px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 1;
   }
-  .main-btn {
-    padding: 1px 9px 1px 9px;
+  .carousel-item {
+    margin-left: 0;
   }
-  /* Seção proficional */
-  .secao-profissional {
-    overflow-x: hidden;
+  .carousel-control-prev, .carousel-control-next {
+    top: 150px;
+    width: 50px;
+    height: 50px;
   }
-  .secao-pessoal {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .paragrafo-profissional {
-    width: 100%;
-    margin: 0px;
-    padding: 12px;
-  }
-  .secao-efeito {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-  }
-  .secao-img {
-    margin: 30px 0px 0px 0px;
-    padding: 10px;
-    width: 90%;
-    height: 40%;
-  }
-  .img-profile {
-    width: 70%;
-    height: 69%;
-  }
-  .botao-whats {
-    width: 50%;
-    margin-top: 30px;
-    padding: 0px 80px 0px 80px;
-  }
-  /* Hobbies */
-  .secao-hobbies {
-    background-image: url(/img-body/phot4200.jpg);
-    background-size: cover;
-  }
-  .container-hobbies {
-    width: 100%;
-  }
-  .hobbie1 {
-    margin: 5px;
-    width: 8rem;
-  }
-  .fa-running {
-    margin-bottom: -3px;
-  }
-  .secao-hobbies-descricao{
-    height: 70vh;
-    padding: 10px;
-  }
-  /* Dicas */
-  .container-dicas {
+  /* container-apresentacao */
+  .container-img-descricao {
     display: flex;
     flex-direction: column;
   }
-  .container-dicas {
-    width: 70%;
-  }
-  .img-dicas {
-    
-    margin: 5px;
   
+  .img-dayana {
+    bottom: -1018px;
+    border-radius: 200px;
+  }
+  .box .content {
+    font-size: 1rem;
+    top: 0px;
+  }
+  .box {
+    width: 100%;
+    height: 410px;
+    top: 25px;
+  }
+   /* Container produtos */
+  .container-servicos {
+    margin: 0;
+    width: 100%;
+    top: 500px;
+  }
+  .container-itens {
+    flex-direction: column;
+    justify-content: space-around;
   }
 
-  /* Rodapé */
-  .container-rodape {
-    display: flex;
-    align-items: flex-start;
+  .itens-cursos {
+    width: 100%;
+  }
+  /* Container resultados */
+  .container {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 150px;
+  }
+  /* Container resultados Alunos */
+  .itens {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Container desfrute */
+  
+  .container-desfrute-marketing {
     flex-direction: column;
-    height: 150vh;
+    height: 100%;
+    transform: none;
   }
-  .secao-contato {
-    margin: 10px 0px 0px 10px;
+  
+.img-desfrute {
+  width: 100%;
+  height: 100%;
+}
+  .btn-increvase-desfrute {
+    height: 5%;
+    width: 90%;
   }
-  #particles-js {
-    height: 65%;
+  
+.svg-descricao {
+  display: none;
+}
+  .container-desfrute-marketing:hover {
+    transform: scale(1);
   }
-  .container-redes {
-    margin-top: 0rem;
-    padding-top: 4rem;
-    padding: 0px;
+  .container-desfrute-marketing::before {
+    transform: translateZ(4rem);
   }
-  .icon-rodape {
-    padding: 0px 20px 0px 5px;
-    margin-top: 20px;
+  .container-desfrute-marketing::before:hover {
+    transform: translateZ(0);
+  }
+  .container-desfrute-marketing::after {
+    transform: translateZ(-4rem);
+  }
+  .container-desfrute-marketing::after:hover {
+    transform: translateZ(-1px);
+  }
+ 
+  /* Depoimentos dos alunos */
+  
+  .itens-depoimentos {
+    width: 90%;
+  }
+  /* Container inscrever */
+
+  .btn-increvase {
+    width: 100%;
+  }
+  /* Dúvidas frequentes */
+  .duvidas-responsivo {
+    width: 100%;
+  }
+  /* Container plataformas */
+  .mobile-plat {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 0px;
+  }
+  .cont-platafoma-itens {
+    align-items: center;
+    justify-content: center;
+  }
+  .img-mobile {
+    width: 80%;
+    height: 60%;
+  }
+  /* Acorddeon*/
+  .h-6 {
+    margin: 15px;
     font-size: 1rem;
   }
+  /* Contatos/Rodapé */
+  .container-principal-contato {
+    flex-direction: column;
+  }
 }
-
-/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
-
-/*@media (min-width: 1200px) {
-}*/
