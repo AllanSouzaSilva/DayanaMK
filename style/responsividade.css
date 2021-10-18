@@ -71,7 +71,6 @@
     border-radius: 200px;
   }
   .box .content {
-    
     font-size: 1rem;
     top: 0px;
   }
@@ -176,9 +175,6 @@
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 
 @media (min-width: 574px) and (max-width: 767.98px) {
-  html {
-    overflow-x: hidden;
-  }
   .container-fluid {
     margin: 0;
     padding: 0;
@@ -243,13 +239,11 @@
     display: flex;
     flex-direction: column;
   }
-  
   .img-dayana {
     bottom: -1018px;
     border-radius: 200px;
   }
   .box .content {
-    
     font-size: 1rem;
     top: 0px;
   }
@@ -258,7 +252,7 @@
     height: 410px;
     top: 25px;
   }
-   /* Container produtos */
+  /* Container produtos */
   .container-servicos {
     margin: 0;
     width: 100%;
@@ -268,7 +262,6 @@
     flex-direction: column;
     justify-content: space-around;
   }
-
   .itens-cursos {
     width: 100%;
   }
@@ -283,27 +276,23 @@
     width: 100%;
     margin: 0;
   }
-
   /* Container desfrute */
-  
   .container-desfrute-marketing {
     flex-direction: column;
     height: 100%;
     transform: none;
   }
-  
-.img-desfrute {
-  width: 100%;
-  height: 100%;
-}
+  .img-desfrute {
+    width: 100%;
+    height: 100%;
+  }
   .btn-increvase-desfrute {
     height: 5%;
     width: 90%;
   }
-  
-.svg-descricao {
-  display: none;
-}
+  .svg-descricao {
+    display: none;
+  }
   .container-desfrute-marketing:hover {
     transform: scale(1);
   }
@@ -319,14 +308,11 @@
   .container-desfrute-marketing::after:hover {
     transform: translateZ(-1px);
   }
- 
   /* Depoimentos dos alunos */
-  
   .itens-depoimentos {
     width: 90%;
   }
   /* Container inscrever */
-
   .btn-increvase {
     width: 100%;
   }
@@ -362,13 +348,10 @@
 /* Dispositivos large (desktops com 992px ou mais)*/
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  html {
-    overflow-x: hidden;
-  }
+   
   .container-fluid {
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
   .sticky {
     background: rgba(255, 255, 255, 0.924);
@@ -401,9 +384,10 @@
     margin: auto !important;
   }
   .carousel-caption {
+    border: 2px solid white;
     width: 350px;
     height: 290px;
-    left: 120px;
+    left: 200px;
     bottom: 180px;
   }
   .carousel-caption h2 {
@@ -429,9 +413,8 @@
     display: flex;
     flex-direction: column;
   }
-  
   .img-dayana {
-    bottom: -1018px;
+    bottom: -1250px;
     border-radius: 200px;
   }
   .box .content {
@@ -443,7 +426,7 @@
     height: 410px;
     top: 25px;
   }
-   /* Container produtos */
+  /* Container produtos */
   .container-servicos {
     margin: 0;
     width: 100%;
@@ -453,42 +436,38 @@
     flex-direction: column;
     justify-content: space-around;
   }
-
   .itens-cursos {
     width: 100%;
   }
   /* Container resultados */
   .container {
     height: 100%;
-    width: 80%;
-    margin-bottom: 150px;
+    width: 50%;
+    margin-bottom: 120px;
   }
   /* Container resultados Alunos */
   .itens {
     width: 100%;
     margin: 0;
   }
-
   /* Container desfrute */
-  
   .container-desfrute-marketing {
     flex-direction: column;
     height: 100%;
     transform: none;
   }
-  
-.img-desfrute {
-  width: 100%;
-  height: 100%;
-}
+  .img-desfrute {
+ 
+    width: 60%;
+    height: 70%;
+  }
   .btn-increvase-desfrute {
     height: 5%;
     width: 90%;
   }
-  
-.svg-descricao {
-  display: none;
-}
+  .svg-descricao {
+    display: none;
+  }
   .container-desfrute-marketing:hover {
     transform: scale(1);
   }
@@ -504,14 +483,14 @@
   .container-desfrute-marketing::after:hover {
     transform: translateZ(-1px);
   }
- 
   /* Depoimentos dos alunos */
-  
   .itens-depoimentos {
-    width: 90%;
+    margin: auto;
+    width: 50%;
+    height: 40%;
+    margin-bottom: 20px;
   }
   /* Container inscrever */
-
   .btn-increvase {
     width: 100%;
   }
