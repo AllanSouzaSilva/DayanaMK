@@ -10,12 +10,12 @@ O projeto em si é um site de MARKETING DIGITAL na onde abordar tudo o que é pr
 <!-- imagens-->
 <h2 align="center">
   <p>Web Marketing home page</p>
-  <img width="70%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/img/video-desktop.mp4" style="max-width:70%;">
+  <img width="70%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/img/video-desktop.gif" style="max-width:70%;">
 </h2>
 
 <h2 align="center">
   <p>Web Marketing home page - Mobile</p>
-  <img width="30%" heigth="30%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/img/VideoMobile.mp4" style="max-width:40%;">
+  <img width="30%" heigth="30%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/img/VideoMobile.gif" style="max-width:40%;">
 </h2>
 
 
