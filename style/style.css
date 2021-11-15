@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: calc(60% + 0.8vmin);
 }
 
 html, body {
@@ -25,6 +26,8 @@ body {
 
 .container-fluid {
   overflow-x: hidden;
+  max-width: 90rem;
+  margin: auto;
 }
 
 /****************************** REAPROVEITAMENTO DE CÓDIGO *************************/
@@ -32,6 +35,7 @@ body {
 .container-blob-img, .container-fluid, .container-img-descricao, .container-servicos, .container-icon-servicos, .container-desfrute-marketing-video, .container-desfrute-marketing, .img-mobile, .lista-contato li {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .container-fluid, .itens, .itens-depoimentos, .container-apresentacao, .container-servicos, .container-icon-servicos, .img-mobile, .container-contatos {
@@ -67,7 +71,7 @@ nav {
   border-radius: 15px;
   font-size: 1.5rem;
   filter: drop-shadow(0 0 8px #a830b0);
-  background: linear-gradient(to left, #8b56b8, #8b56b8, #a830b0, #a830b0);
+  background: linear-gradient(to left, #8b56b8, #8b56b8, #a830b0, #a830b0, #141414);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -220,7 +224,7 @@ nav {
   justify-content: space-between;
   position: relative;
   margin: 0;
-  background-image: url(/Img/wavesOpacity.svg);
+  background-image: url(/style/wavesOpacity.svg);
 }
 
 .marketing-img {
@@ -335,33 +339,36 @@ nav {
 
 /****************************** Configuração secao pessoal/profissional *************************/
 
-.container-apresentacao {
-  margin-bottom: 20px;
-}
-
 .container-img-descricao {
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   width: 90%;
 }
-.container-blob {
-  width: 450px;
-  height:450px;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  background: linear-gradient(134deg, #232323, #a830b0, #a830b0, #c64078, #f20952);
-  z-index: 2;
+
+.container-fotoPerfil {
+  display: flex;
+  align-items: flex-end;
+  border: 8px solid;
+  border-image: linear-gradient(227.91deg, #A830B0 0%, #C64078 100%) 1;
+  max-width: 100%;
+  padding: 10px;
+  margin-right: 50px;
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  background: linear-gradient(rgba(0, 0, 0, .20), rgba(0, 0, 0, .20)100%), url('/img/DayanaPerfil3.JPG') no-repeat;
+  background-size: cover;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+  color: #ffffff;
 }
 
-.img-dayana {
-  position: absolute;
-  object-fit: contain;
-  width: 360px;
-  height: 350px;
-  bottom: -757px;
-  z-index: 3;
-  border-radius: 160px;
-  filter: drop-shadow(4px 2px 10px #fff);
+.container-fotoPerfil>p {
+  font-size: 1.2rem;
+}
+
+.container-fotoPerfil span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
 }
 
 .box {
@@ -608,7 +615,6 @@ nav {
 
 .container-servicos {
   width: 90%;
-  margin-bottom: 20px;
 }
 
 .container-itens {
@@ -1017,7 +1023,23 @@ nav {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
 }
 
-/*****************************.Efeitos Gerais *************************/
+/***************************** Configuração scrollbar *************************/
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(134deg, #232323, #a830b0, #a830b0, #c64078, #f20952);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFF;
+  border-radius: 10px;
+}
+
+/***************************** Efeitos Rodapé *************************/
 
 .color-change-4x {
   -webkit-animation: color-change-4x 6s linear infinite alternate both;
@@ -1026,8 +1048,8 @@ nav {
   color: #0f0e0e;
   font-weight: bold;
   box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+  margin-top: 20px;
 }
-
 
 @-webkit-keyframes color-change-4x {
   0% {
