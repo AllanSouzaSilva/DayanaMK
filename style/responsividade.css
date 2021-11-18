@@ -66,9 +66,8 @@
     display: flex;
     flex-direction: column;
   }
-  .img-dayana {
-    bottom: -890px;
-    border-radius: 200px;
+  .container-fotoPerfil {
+    margin: 0;
   }
   .box .content {
     font-size: 1rem;
@@ -239,9 +238,8 @@
     display: flex;
     flex-direction: column;
   }
-  .img-dayana {
-    bottom: -1018px;
-    border-radius: 200px;
+  .container-fotoPerfil {
+    margin: 0;
   }
   .box .content {
     font-size: 1rem;
@@ -348,7 +346,6 @@
 /* Dispositivos large (desktops com 992px ou mais)*/
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-   
   .container-fluid {
     margin: 0;
     padding: 0;
@@ -413,13 +410,13 @@
     display: flex;
     flex-direction: column;
   }
-  .img-dayana {
-    bottom: -1250px;
-    border-radius: 200px;
+  .container-fotoPerfil {
+    margin: 0;
   }
   .box .content {
     font-size: 1rem;
     top: 0px;
+    width: 300px;
   }
   .box {
     width: 100%;
@@ -457,7 +454,6 @@
     transform: none;
   }
   .img-desfrute {
- 
     width: 60%;
     height: 70%;
   }
