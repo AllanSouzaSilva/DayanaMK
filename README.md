@@ -58,5 +58,5 @@ O projeto em si é um site de MARKETING DIGITAL na onde abordar tudo o que é pr
   
 [![social](https://img.shields.io/badge/Linkedin--blue?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/allan-souza-silva-794164146/)
 
-[![social](https://img.shields.io/badge/Site--red?style=for-the-badge)](https://allansouza-freelancer.netlify.app/)
+[![social](https://img.shields.io/badge/Site--red?style=for-the-badge)](https://marketingdigitalrecriado.netlify.app/)
   
